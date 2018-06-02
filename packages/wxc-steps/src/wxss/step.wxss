@@ -1,0 +1,267 @@
+.wxc-steps--steps.wxc-steps--5 .wxc-steps__step {
+
+  width: 25%;
+
+}
+
+
+
+.wxc-steps--steps.wxc-steps--4 .wxc-steps__step {
+
+  width: 33%;
+
+}
+
+
+
+.wxc-steps--steps.wxc-steps--3 .wxc-steps__step {
+
+  width: 50%;
+
+}
+
+
+
+.wxc-steps--steps .wxc-steps__step {
+
+  position: relative;
+
+  float: left;
+
+  padding-bottom: 25px;
+
+  color: #b1b1b1;
+
+  width: 100%;
+
+}
+
+
+
+.wxc-steps--steps .wxc-steps__title {
+
+  transform: translateX(-50%);
+
+  font-size: 10px;
+
+  text-align: center;
+
+}
+
+
+
+.wxc-steps--steps .wxc-steps__icons {
+
+  position: absolute;
+
+  top: 30px;
+
+  left: -10px;
+
+  padding: 0 8px;
+
+  background-color: #fff;
+
+  z-index: 10;
+
+}
+
+
+
+.wxc-steps--steps .wxc-steps__circle {
+
+  display: block;
+
+  position: relative;
+
+  width: 5px;
+
+  height: 5px;
+
+  background-color: #e5e5e5;
+
+  border-radius: 50%;
+
+}
+
+
+
+.wxc-steps--steps .wxc-steps__line {
+
+  position: absolute;
+
+  left: 0px;
+
+  top: 32px;
+
+  width: 100%;
+
+  height: 1px;
+
+  background-color: #e5e5e5;
+
+}
+
+
+
+
+
+/* 已完成的steps */
+
+.wxc-steps--steps .wxc-steps__step--done {
+
+  color: #333;
+
+}
+
+
+
+.wxc-steps--steps .wxc-steps__step--done .wxc-steps__line {
+
+  background-color: #06bf04;
+
+}
+
+
+
+.wxc-steps--steps .wxc-steps__step--done .wxc-steps__circle {
+
+  width: 5px;
+
+  height: 5px;
+
+  background-color: #09bb07;
+
+}
+
+
+
+/* 正在进行中的steps */
+
+.wxc-steps--steps .wxc-steps__step--cur .wxc-steps__icons {
+
+  top: 25px;
+
+  left: -14px;
+
+}
+
+
+
+.wxc-steps--steps .wxc-steps__step--cur .wxc-steps__circle {
+
+  width: 13px;
+
+  height: 13px;
+
+  background-image: url("https://b.yzcdn.cn/v2/image/wap/success_small@2x.png");
+
+  background-size: 13px 13px;
+
+}
+
+
+
+.wxc-steps--steps .wxc-steps__step--cur .wxc-steps__line {
+
+  background-color: #e5e5e5;
+
+}
+
+
+
+/* 各种不同位置的 */
+
+.wxc-steps--steps .wxc-steps__step--first-child .wxc-steps__title {
+
+  margin-left: 0;
+
+  transform: none;
+
+  text-align: left;
+
+}
+
+
+
+.wxc-steps--steps .wxc-steps__step--first-child .wxc-steps__icons {
+
+  left: -7px;
+
+}
+
+
+
+.wxc-steps--steps .wxc-steps__step--last-child {
+
+  position: absolute;
+
+  right: 0;
+
+  top: 0;
+
+  text-align: right;
+
+}
+
+
+
+.wxc-steps--steps .wxc-steps__step--last-child .wxc-steps__title {
+
+  transform: none;
+
+  text-align: right;
+
+}
+
+
+
+.wxc-steps--steps .wxc-steps__step--last-child .wxc-steps__icons {
+
+  left: auto;
+
+  right: -6px;
+
+}
+
+
+
+.wxc-steps--steps .wxc-steps__step--last-child .wxc-steps__line {
+
+  display: none;
+
+}
+
+
+
+/* 有描述的step */
+
+.wxc-steps--steps .wxc-steps__step--db-title {
+
+  min-height: 29px;
+
+}
+
+
+
+.wxc-steps--steps .wxc-steps__step--db-title .wxc-steps__line {
+
+  top: 45px;
+
+}
+
+
+
+.wxc-steps--steps .wxc-steps__step--db-title .wxc-steps__icons {
+
+  top: 43px;
+
+}
+
+
+
+.wxc-steps--steps .wxc-steps__step--db-title.wxc-steps__step--cur .wxc-steps__icons {
+
+  top: 39px;
+
+}

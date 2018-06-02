@@ -1,0 +1,19 @@
+{
+  "name": "@canicelebrate/wxc-steps",
+  "version": "1.0.0",
+  "description": "步骤条 - 小程序组件",
+  "main": "dist/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/canicelebrate/wxc-steps.git"
+  },
+  "author": "William Wang",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "minConfig": {
+    "component": true
+  }
+}
