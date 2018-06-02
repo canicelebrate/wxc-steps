@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
+    "@canicelebrate/wxc-steps": "^1.0.1",
     "@minui/wxc-example": "^1.0.0",
     "@minui/wxc-example-demo": "^1.0.0",
     "@minui/wxc-example-md": "^1.0.0",

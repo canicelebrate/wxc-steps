@@ -1,7 +1,7 @@
 <template>
   <example title="wxc-steps" desc="步骤条">
 
-    <example-demo title="请填写示例名称" desc="请填写示例描述">
+    <example-demo title="steps示例" desc="设置步骤信息数组和当前执行位置">
       <demo-default></demo-default>
     </example-demo>
 

@@ -5,7 +5,7 @@
 ## Install
 
 ``` bash
-$ min install @ww/wxc-steps
+$ min install @canicelebrate/wxc-steps
 ```
 
 
@@ -54,6 +54,7 @@ steps 数据格式如下：
 
 ## ChangeLog
 
-#### v1.0.0（2018-6-1）
-
+#### v1.0.1（2018-6-1）
 - 初始版本
+#### v1.0.2（2018-6-2）
+- 完善demo页

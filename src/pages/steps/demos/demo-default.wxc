@@ -1,5 +1,5 @@
 <template>
-  <wxc-steps></wxc-steps>
+  <wxc-steps type="horizon" steps="{{steps}}"></wxc-steps>
 </template>
 
 <script>
@@ -9,7 +9,32 @@ export default {
       'wxc-steps': '@canicelebrate/wxc-steps'
     }
   },
-  data: { },
+  data: { 
+	steps:[
+	  {
+	    // 此步骤是否当前完成状态
+	    current: false,
+	    // 此步骤是否已经完成
+	    done: true,
+	    // 此步骤显示文案
+	    text: '步骤一',
+	    // 此步骤描述语
+	    desc: '10.01'
+	  },
+	  {
+	    done: true,
+	    current: false,
+	    text: '步骤二',
+	    desc: '10.02'
+	  },
+	  {
+	    done: true,
+	    current: true,
+	    text: '步骤三',
+	    desc: '10.03'
+	  }
+	]
+  },
   methods: { }
 }
 </script>
