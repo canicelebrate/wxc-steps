@@ -41,11 +41,12 @@ export default {
 
 <style>
 .blue-line{
-	background-color: blue !important;
+	background-color: #108ee9 !important;
 }
 
 .blue-circle {
-	background-color: blue !important;
+	background-color: #108ee9 !important;
+	background-image: url('http://oe817c0x9.bkt.clouddn.com/select_fill.png') !important;
 }
 
 
