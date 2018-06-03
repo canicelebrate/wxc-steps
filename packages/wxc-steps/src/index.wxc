@@ -1,5 +1,5 @@
 <template>
-<view class="wxc-steps wxc-steps--{{ type == 'vertical' ? 'vsteps' : 'steps' }} wxc-steps--{{ steps.length }} {{ className }}">
+<view class="wxc-steps wxc-steps--{{ type == 'vertical' ? 'vsteps' : 'steps' }} wxc-steps--{{ steps.length }} my-class">
   <view
     wx:for="{{ steps }}" wx:for-item="step" wx:key="unique" wx:for-index="index"
     class="wxc-steps__step {{ hasDesc ? 'wxc-steps__step--db-title' : '' }} {{ index == 0 ? 'wxc-steps__step--first-child' : '' }} {{ index == steps.length - 1 ? 'wxc-steps__step--last-child' : '' }} {{ step.done ? 'wxc-steps__step--done' : '' }} {{ step.current ? 'wxc-steps__step--cur' : '' }}"
@@ -7,15 +7,16 @@
     <view class="wxc-steps__title">{{ step.text }}</view>
     <view wx:if="{{ hasDesc && step.desc }}" class="wxc-steps__title wxc-steps__title--desc">{{ step.desc }}</view>
     <view class="wxc-steps__icons">
-      <view class="wxc-steps__circle"></view>
+      <view class="wxc-steps__circle my-steps__circle"></view>
     </view>
-    <view class="wxc-steps__line"></view>
+    <view class="wxc-steps__line my-steps__line"></view>
   </view>
 </view>
 </template>
 
 <script>
 export default {
+  externalClasses:['my-steps__circle','my-steps__line'],
   config: {
     usingComponents: { }
   },

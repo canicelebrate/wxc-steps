@@ -1,5 +1,5 @@
 <template>
-  <wxc-steps type="horizon" steps="{{steps}}"></wxc-steps>
+  <wxc-steps type="horizon" steps="{{steps}}" hasDesc="{{true}}" my-steps__line="blue-line" my-steps__circle="blue-circle"></wxc-steps>
 </template>
 
 <script>
@@ -40,4 +40,13 @@ export default {
 </script>
 
 <style>
+.blue-line{
+	background-color: blue !important;
+}
+
+.blue-circle {
+	background-color: blue !important;
+}
+
+
 </style>
