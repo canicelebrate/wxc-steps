@@ -1,12 +1,12 @@
 <template>
-  <wxc-steps type="horizon" steps="{{steps}}" hasDesc="{{true}}" my-steps__line="blue-line" my-steps__circle="blue-circle"></wxc-steps>
+  <wxc-steps type="horizon" steps="{{steps}}" hasDesc="{{true}}" my-steps-cur-circle="blue-circle-current" my-steps-done-circle="blue-circle" my-steps-cur-line="blue-line"  my-steps-done-line="blue-line"></wxc-steps>
 </template>
 
 <script>
 export default {
   config: {
     usingComponents: {
-      'wxc-steps': '@canicelebrate/wxc-steps'
+      'wxc-steps': '../../../../packages//wxc-steps/src/index'
     }
   },
   data: { 
@@ -28,7 +28,7 @@ export default {
 	    desc: '10.02'
 	  },
 	  {
-	    done: true,
+	    done: false,
 	    current: true,
 	    text: '步骤三',
 	    desc: '10.03'
@@ -46,8 +46,10 @@ export default {
 
 .blue-circle {
 	background-color: #108ee9 !important;
-	background-image: url('http://oe817c0x9.bkt.clouddn.com/select_fill.png') !important;
 }
 
+.blue-circle-current {
+	background-image: url('http://oe817c0x9.bkt.clouddn.com/select_fill.png') !important;
+}
 
 </style>

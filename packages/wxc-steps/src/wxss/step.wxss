@@ -28,7 +28,7 @@
 
   float: left;
 
-  padding-bottom: 25px;
+  padding-bottom: 25rpx;
 
   color: #b1b1b1;
 
@@ -49,7 +49,7 @@
 }
 
 .wxc-steps__title--desc{
-  font-size: 16rpx;
+  font-size: 16rpx !important;
 }
 
 
@@ -78,9 +78,9 @@
 
   position: relative;
 
-  width: 5px;
+  width: 13rpx;
 
-  height: 5px;
+  height: 13rpx;
 
   background-color: #e5e5e5;
 
@@ -90,17 +90,19 @@
 
 
 
+
+
 .wxc-steps--steps .wxc-steps__line {
 
   position: absolute;
 
   left: 0rpx;
 
-  top: 32rpx;
+  top: 79rpx;
 
   width: 100%;
 
-  height: 1rpx;
+  height: 2rpx;
 
   background-color: #e5e5e5;
 
@@ -130,9 +132,9 @@
 
 .wxc-steps--steps .wxc-steps__step--done .wxc-steps__circle {
 
-  width: 5rpx;
+  width: 13rpx;
 
-  height: 5rpx;
+  height: 13rpx;
 
   background-color: #09bb07;
 
@@ -142,9 +144,9 @@
 
 /* 正在进行中的steps */
 
-.wxc-steps--steps .wxc-steps__step--cur .wxc-steps__icons {
+.wxc-steps--steps .wxc-steps__step--cur  .wxc-steps__icons {
 
-  top: 46rpx;
+  top: 65rpx;
 
   left: -14rpx;
 
@@ -154,13 +156,13 @@
 
 .wxc-steps--steps .wxc-steps__step--cur .wxc-steps__circle {
 
-  width: 13rpx;
+  width: 26rpx;
 
-  height: 13rpx;
+  height: 26rpx;
 
   background-image: url("https://b.yzcdn.cn/v2/image/wap/success_small@2x.png");
 
-  background-size: 13rpx 13rpx;
+  background-size: 26rpx 26rpx;
 
 }
 
@@ -242,7 +244,7 @@
 
 .wxc-steps--steps .wxc-steps__step--db-title {
 
-  min-height: 29rpx;
+  min-height: 45rpx;
 
 }
 
@@ -250,7 +252,7 @@
 
 .wxc-steps--steps .wxc-steps__step--db-title .wxc-steps__line {
 
-  top: 45rpx;
+  top: 78rpx;
 
 }
 
@@ -258,7 +260,7 @@
 
 .wxc-steps--steps .wxc-steps__step--db-title .wxc-steps__icons {
 
-  top: 43rpx;
+  top: 75rpx;
 
 }
 
@@ -266,6 +268,6 @@
 
 .wxc-steps--steps .wxc-steps__step--db-title.wxc-steps__step--cur .wxc-steps__icons {
 
-  top: 39rpx;
+  top: 65rpx;
 
 }

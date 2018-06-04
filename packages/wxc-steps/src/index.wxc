@@ -7,16 +7,32 @@
     <view class="wxc-steps__title">{{ step.text }}</view>
     <view wx:if="{{ hasDesc && step.desc }}" class="wxc-steps__title wxc-steps__title--desc">{{ step.desc }}</view>
     <view class="wxc-steps__icons">
-      <view class="wxc-steps__circle my-steps__circle"></view>
+
+      <view wx:if="{{step.current}}" class="wxc-steps__circle my-steps-cur-circle"></view>
+
+
+      <view wx:elif="{{step.done}}" class="wxc-steps__circle my-steps-done-circle"></view>
+
+
+      <view wx:else class="wxc-steps__circle"></view>
+
     </view>
-    <view class="wxc-steps__line my-steps__line"></view>
+    <block wx:if="{{step.current}}">
+      <view class="wxc-steps__line my-steps-cur-line"></view>
+    </block>
+    <block wx:elif="{{step.done}}">
+        <view class="wxc-steps__line my-steps-done-line"></view>
+    </block>
+    <block wx:else>
+        <view class="wxc-steps__line"></view>
+    </block>
   </view>
 </view>
 </template>
 
 <script>
 export default {
-  externalClasses:['my-steps__circle','my-steps__line'],
+  externalClasses:['my-steps-cur-circle','my-steps-done-circle','my-steps-cur-line','my-steps-done-line'],
   config: {
     usingComponents: { }
   },
